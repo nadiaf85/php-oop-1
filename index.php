@@ -11,14 +11,14 @@ metodi d’istanza che abbiamo visto stamattina e create un file index.php in cu
 
 require_once __DIR__."/classes/Movie.php";
 
-$film1 = [
+$film = [
     new Movie ("ritorno al futuro 1","fantascienza","1985"),
     new Movie ("ritorno al futuro 2","fantascienza","1989"),
     new Movie ("ritorno al futuro 3","fantascienza","1990"),
 ];
 
 
-// var_dump($film1)
+// var_dump($film)
 
 ?>
 
@@ -36,7 +36,7 @@ $film1 = [
 <ul>
 <?php
 
-    foreach ($film1 as $elemento){
+    foreach ($film as $elemento){
         echo "<li> {$elemento->getInfo()} </li>";
     }
 ?>
