@@ -9,16 +9,16 @@ metodi d’istanza che abbiamo visto stamattina e create un file index.php in cu
 
 <?php
 
-require_once __DIR__."./classes/Movie.php";
+require_once __DIR__."/classes/Movie.php";
 
-$Film1 = [
+$film1 = [
     new Movie ("ritorno al futuro 1","fantascienza","1985"),
     new Movie ("ritorno al futuro 2","fantascienza","1989"),
     new Movie ("ritorno al futuro 3","fantascienza","1990"),
 ];
 
 
-var_dump($Film1)
+// var_dump($film1)
 
 ?>
 
@@ -36,8 +36,8 @@ var_dump($Film1)
 <ul>
 <?php
 
-    foreach ($Film1 as $elemento){
-        echo "<li> {$elemento->getInfo()} </li>"
+    foreach ($film1 as $elemento){
+        echo "<li> {$elemento->getInfo()} </li>";
     }
 ?>
 </ul>

@@ -12,7 +12,7 @@ class Movie{
     }
 
     public function getInfo(){
-        return {$this->titolo} {$this->genere} {$this->anno};
+        return "{$this->titolo} {$this->genere} [{$this->anno}]";
     }
 }
 ?>
